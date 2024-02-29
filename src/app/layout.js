@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch('http://3.148.115.46:3000/v1-api/houses')
+        fetch('https://3.148.115.46:3000/v1-api/houses')
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error(error));
